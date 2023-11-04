@@ -1,43 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CODEx - </title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <div class="navbar background">
-        <div class="leftnav">
-            <div class="logo"><img src="img/2.png" alt="logo"></div>
-        </div>
-        <div class="rightnav">
-            <div class="list">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#AboutUs">AboutUs</a></li>
-            <li><a href="#Events">Events</a></li>
-            <li><a href="#Feedback">Feedback</a></li>
-            <label class="search"><input type="text" name="search" id="search">
-                <button class="btn btn-sm">Search</button></label></div>
-        </div>
-    </div>
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
 
-    <section class="firstSection">
-        <div class="Homepage">
-            <p class="text-big">CODEx</p>
-            <p class="text-small">Community of Developer</p>
-             <div class="buttons">
-                <button class="btns">Learn more</button>
-             </div>
-             <p class="text-corner">MAHARISHI MARKENDESHWAR (DEEMED TO BE) UNIVERSITY,<br>
-              Mullana,Ambala Haryana</p>
-              <div id="hr"><hr></div>
+        <a href="#" class ="logo"><img src="img/new logo white.png" alt=""></a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#products">Event</a>
+            <a href="#review">Feedback</a>
+        </nav>
+        <div class="icons">
+            <a href="#" class="fas fa-user"></a>
         </div>
-        
-
+    </header>
+    <section class="home" id="home">
+        <div class="content">
+            <h3>CODEx</h3>
+            <h2 id="element"></h2>
+            <button class="btn">Learn More</button>
+        </div>
     </section>
+
+    <section class="about" id="about">
+        <h1 class="heading"> About us </h1>
+        <div class="row">
+            <div class="video-container">
+                <video src="video.mp4" loop autoplay muted></video>
+                <h3>Community Of Developers</h3>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto, voluptates quos asperiores reiciendis fugit. In eveniet nisi aliquid facere exercitationem consectetur dolores magni. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam totam facilis aperiam et praesentium sunt, commodi minima cumque doloribus. Consequatur</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nisi non nemo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo reprehenderit fugiat est
+                </p>
+            </div>    
+        </div>
+        <div class="nav1">
+            <ul>
+                <li><a href="#Team">Team</a></li>
+                <li><a href="#Event">Event</a></li>
+                <li><a href="#Gallery">Event Gallery</a></li>
+                <li><a href="#Social">Social Handles</a></li>
+                <li><a href="#Community">Community Handles</a></li>
+                <li><a href="#Contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </section>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </body>
 
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Community of Developers'],
+        typeSpeed: 50,
+    });
+
+
+</script>
 </html>
