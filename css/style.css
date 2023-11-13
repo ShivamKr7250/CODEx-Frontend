@@ -6,7 +6,7 @@
     font-family: "Poppins", sans-serif;
 }
 :root{
-    --black: #000
+    --black: #000;
 }
 *{
     margin: 0;
@@ -37,6 +37,7 @@ header{
     justify-content: space-between;
     z-index: 1000;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    min-width: 100vw;
 }
 
 header .logo{
@@ -48,19 +49,55 @@ header .logo{
 }
 header .logo img{
     width: 100%;
-    border: 4px solid white;
-    border-radius: 50%;
+    margin-top: 0.5rem;
 }
 header .navbar{
     color: black;
     padding-left: 35.2rem;
+    min-width: auto;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 140px;
+    font-size: 2rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 0px;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
 header .navbar a{
     text-decoration: none;
     font-weight: 500;
     border-radius: 5px;
     font-size: 18px;
-    padding: 8px 15px;
+    padding: 8px 30px;
     color: white;
     transition: all 0.3s ease;
 }
@@ -75,9 +112,10 @@ header .icons a{
     font-size: 3.5rem;
     color: #fef4f4;
     margin-left: 1.5rem;
+    padding-right: 13rem;
 }
 header .icons a:hover{
-    color: white
+    color: rgba(255, 255, 255, 0.327);
 }
 header #toggler{
     display: none;
@@ -96,29 +134,36 @@ header .fa-bars{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(../img/bg5.jpg) no-repeat;
+    background: url(../img/bg4.png) no-repeat;
     background-size: cover;
     background-position: center;
-    min-width: 147vw;
+    min-width: 100vw;
+    position: relative;
 }
 .home .content{
     max-width: 1000rem;
 }
-.home .content h3{
+.home .content h1{
     font-size: 8.5rem;
     color: white;
-    line-height: 1 rem;
-    margin-left: 47rem;
+    margin-left: 50rem;
 }
 .home .content h2{
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     color: white;
     padding: 1rem 0;
     line-height: 0.5;
-    margin-left: 65rem;
+    margin-left: 57rem;
     font-family: 'Moon Dance', cursive;
 }
-.btn{
+.home .mmdu h3{
+    font-size: 2rem;
+    margin-left: -104rem;
+    padding: 2rem;
+    transform: translate(27px, 320px);
+    color: #fff;
+}
+.btn1{
     height: 55px;
     width: 170px;
     border-radius: 5px;
@@ -133,9 +178,16 @@ header .fa-bars{
     outline: none;
     transition: all 0.3s ease;
 }
-.btn:hover{
+.btn1:hover{
     color: #fff;
     background: none;
+}
+.about{
+   background-image: url(../img/bg6.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-width: 100vw;
+   min-height: 100vh;
 }
 .heading{
     text-align: center;
@@ -146,14 +198,6 @@ header .fa-bars{
     background: #fff;
     border: 2rem solid black;
     border-radius: 16rem;
-}
-.about{
-   background-image: url(../img/bg6.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   width: 147vw;
-   height: 100vh;
-   
 }
 .about .row{
     display: flex;
@@ -169,9 +213,9 @@ header .fa-bars{
 }
 .about .row .video-container video{
     width: 100%;
-    border: 1.5rem solid #fff;
-    border-radius: .5rem;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: 1rem solid #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
     height: 100%;
     object-fit: cover;
 }
@@ -179,23 +223,29 @@ header .fa-bars{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #333;
     background: #fff;
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     text-align: center;
     mix-blend-mode: screen;
 }
 .about .row .content{
     flex: 1 1 40rem;
 }
+.about .row .content h3{
+    font-size: 3rem;
+    color: #333;
+}
 .about .row .content p{
-    font-size: 2rem;
-    color:#fff;
-    padding: .5rem 0;
-    padding-top: 1rem;
+    font-size: 1.8rem;
+    color: white;
+    padding: 0.5rem 0;
+    padding-top: 2rem;
     line-height: 1.5;
+    text-align: justify;
+    width: 65rem;
 }
 .nav1{
     display: flex;
@@ -222,13 +272,177 @@ header .fa-bars{
     transition: ease-in-out;
 }
 .nav1 ul li a:hover{
-    color: rgb(144, 34, 34);
+    color: rgba(255, 255, 255, 0.426);
     animation-duration: 2s;
 
+}
+/* team ......................... */
+.Team{
+    background-image: url(../img/bg6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+ }
+ .heading1{
+    text-align: center;
+    font-size: 3rem;
+    color: #0c0c0c;
+    padding: 0.5rem;
+    margin: 0rem 24rem;
+    background: #fff;
+    border: 2rem solid black;
+    border-radius: 16rem;
+ }
+ 
+ .row1{
+    display: flex;
+    margin-top: 10rem;
+    align-items: center;
+    gap: 14rem;
+    padding: 0px 14.5rem;
+ }
+ .img{
+    border: 2px solid white;
+    border-radius: 50%;
+    contain: content;
+    width: 191px;
+    height: 190px;
+ }
+ .m1 h2{
+    color: #76d5ff;
+    text-align: center;
+    margin-top: 1rem;
+ }
+ .m1 h3{
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+ }
+ .m1 h4{
+    font-size: 2rem;
+    text-align: center;
+ }
+ .row2{
+    display: flex;
+    margin-top: 4rem;
+    align-items: center;
+    gap: 14rem;
+    padding: 0px 14.5rem;
+ }
+ .row3{
+    display: flex;
+    margin-top: 4rem;
+    align-items: center;
+    gap: 14rem;
+    padding: 0px 14.5rem;
+}
+/* Contact form */
+.contact{
+    background: #000;
+}
+.heading2{
+    text-align: center;
+    font-size: 3rem;
+    color: #0c0c0c;
+    padding: 0.5rem;
+    margin: 0rem 24rem;
+    background: #fff;
+    border: 2rem solid black;
+    border-radius: 16rem;
+ }
+.contact .row{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    align-items: center;
+}
+.contact .row form{
+    background-image: url(../img/bg4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    min-width: 50%;
+}
+.contact .row .image{
+    flex: 1 1 40rem;
+}
+.contact .row .image img{
+    width: 85%;
+    height: 60rem;
+    margin: 0rem 5rem;
+    transform: translateY(-49px);
+    overflow: hidden;
+}
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%;
+}
+.contact .row form .box:focus{
+    border-color: black;
+}
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+.contact .row form input .btn{
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    margin: 0px 70rem;
+    border: 2px solid #fff;
+    transform: translateY(46px);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px 9px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.contact .row form input .btn:hover{
+    color: #fff;
+    background: none;
 }
 
 /* Resposivenes */
 
+@media (max-width: 991px){
+    header .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        color: black;
+        padding-left: 0.2rem;
+    }
+    .home{
+        display: flex;
+        align-items: center;
+        background: url(../img/bg5.jpg) no-repeat;
+        background-size: cover;
+        background-position: left;
+        width: 400vw;
+        height: 342vh;
+        min-width: 153.5rem;
+    }
+    .about{
+        width: 400vw;
+        height: 342vh;
+        min-width: 153.5rem;
+    }
+}
 @media (max-width: 768px){
     header .fa-bars{
         display: block;
@@ -251,78 +465,97 @@ header .fa-bars{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     header .fa-bars {
-        font-size: 7rem;
+        font-size: 10rem;
         color: white;
         border-radius: 0.5rem;
-        padding: 0.5rem 0.5rem;
+        padding: 0.5rem 2.5rem;
         cursor: pointer;
         border: 1rem solid rgba(0, 0, 0, 0.3);
     }
     header .icons a{
-        font-size: 6.5rem;
+        font-size: 10.5rem;
         color: #fef4f4;
-        margin-left: -1.5rem;
+        margin-left: 0.5rem;
+        padding-right: 9rem;
     }
     header .navbar a{
         margin: 1.5rem;
-        padding: 1.5rem;
+        padding: 3.5rem;
         color: black;
         background: #fff;
         border: 1rem solid rgba(0, 0, 0, .1);
         display: block;
     }
+    header .navbar a {
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 5px;
+        font-size: 80px;
+        padding: 8px 15px;
+        color: black;
+        transition: all 0.3s ease;
+    }
     header .logo{
         width: 18%;
         display: flex;
-        /* justify-content: center; */
-        /* align-items: center; */
         margin-left: 13px;
     }
    
-    .home .content h3{
-        font-size: 16.5rem;
+    .home .content h1{
+        font-size: 30rem;
+        text-align: center;
     }
-    .home .content h3{
-        margin-left: 42rem;
+    .home .content h1{
+        margin-left: 12rem;
     }
     .home{
         display: flex;
         align-items: center;
-        min-height: 372vh;
         background: url(../img/bg5.jpg) no-repeat;
         background-size: cover;
         background-position: left;
-        min-width: 148.5rem;
+        width: 400vw;
+        height: 342vh;
+        min-width: 153.5rem;
     }
     .home .content h2{
-        font-size: 7.5rem;
+        font-size: 10.5rem;
         color: white;
         padding: 1rem 0;
         line-height: 0.5;
-        margin-left: 54rem;
+        text-align: center;
+        margin-left: 14rem;
         font-family: 'Moon Dance', cursive;
     }
     .btn{
-        height: 55px;
-        width: 170px;
+        height: 151px;
+        width: 315px;
         border-radius: 5px;
         border: none;
-        margin: 0px 70rem;
-        border: 2px solid #fff;
-        transform: translate(46px, 185px);
-        font-size: 20px;
-        font-weight: 500;
+        margin: -13px 54rem;
+        border: 7px solid #fff;
+        transform: translate(-12px, 315px);
+        font-size: 56px;
+        font-weight: 600;
         padding: 0px 9px;
         cursor: pointer;
         outline: none;
         transition: all 0.3s ease;
     }
+    .home .mmdu h3{
+        font-size: 5rem;
+        margin-left: -137rem;
+        padding: 2rem;
+        transform: translate(27px, 1069px);
+        color: #fff;
+    }
     .home .content span{
         font-size: 2.5rem;
     }
     .about{
-        width: 371vw;
-        height: 330vh;
+        width: 400vw;
+        height: 370vh;
+        min-width: 153.5rem;
     }
     .heading {
         text-align: center;
@@ -342,11 +575,22 @@ header .fa-bars{
         padding: 13rem 11rem;
         padding-bottom: 3rem;
     }
+    .about .row .video-container{
+        width: 100%;
+    }
+    .about .row .video-container .video{
+        width: 90%;
+        border: 3rem solid #fff;
+        border-radius: 3.5rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+        height: 100%;
+        object-fit: cover;
+    }
     .about .row .video-container h3 {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        font-size: 7rem;
+        font-size: 2rem;
         color: #333;
         background: #fff;
         width: 100%;
@@ -366,8 +610,30 @@ header .fa-bars{
         padding-top: 1rem;
         line-height: 1.5;
         text-align: justify;
+        width: 100%;
     }
+    .nav1 ul li{
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        font-size: 4rem;
+        margin: 12px;
+        transform: translateX(-157px);
+    }
+    .Team{
+        width: 400vw;
+        height: 300vh;
+        min-width: 153.5rem;
+    }
+    .Team .row-t .row1{
+        flex:1 1 calc(50% - 1.5rem);
+    }
+    }
+
+@media (max-width: 450px){
+
 }
+
 
 @media(max-width:1250px){
     .home .content h2{
@@ -376,5 +642,4 @@ header .fa-bars{
     .btn{
         margin-left: 61rem;
     }
-    
 }

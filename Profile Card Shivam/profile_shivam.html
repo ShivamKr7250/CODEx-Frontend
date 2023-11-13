@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card Shivam</title>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+
+        .profile-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 370px;
+            width: 100%;
+            background: #fff;
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0.1);
+            position: relative;
+        }
+
+        .profile-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 36%;
+            width: 100%;
+            border-radius: 24px 24px 0 0;
+            background-color: black;
+        }
+
+        .image {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: black;
+            padding: 3px;
+            margin-bottom: 10px;
+        }
+
+        .image .profile-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
+
+        .profile-card .text-data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+
+        .text-data .name {
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .text-data .job {
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .profile-card .media-buttons {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .media-buttons .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 18px;
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            margin: 14px 8px;
+            background-color: black;
+            text-decoration: none;
+        }
+
+        .content .info {
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .codex {
+            color: black;
+            font-size: 1.3rem;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        *:focus,
+        *:active {
+            outline: none !important;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html,
+        body {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            font-family: "Poppins", sans-serif;
+            place-items: center;
+            background: linear-gradient(315deg, #ffffff, #d7e1ec);
+        }
+
+        .wrapper {
+            display: inline-flex;
+            list-style: none;
+        }
+
+        .wrapper .icon {
+            position: relative;
+            background: #ffffff;
+            border-radius: 50%;
+            padding: 15px;
+            margin: 10px;
+            margin-bottom: 82px;
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .wrapper .tooltip {
+            position: absolute;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-card">
+        <div class="image">
+            <img src="shivam.jpg" alt="" class="profile-img" />
+        </div>
+
+        <div class="text-data">
+            <span class="name">Shivam Kumar</span>
+            <span class="job">President</span>
+            <span class="batch">Batch: 2021-25</span>
+        </div>
+
+        <div class="media-buttons">
+            <a href="#" style="background: #4267b2;" class="link">
+                <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="#" style="background: #1da1f2; " class="link">
+                <i class="bx bxl-github"></i>
+            </a>
+            <a href="#" style="background: #e1306c;" class="link">
+                <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="#" style="background: #3097e1;" class="link">
+                <i class="bx bxl-facebook"></i>
+            </a>
+        </div>
+        <div class="content">
+            <span class="info">ASP.NET Developer || Azure & AWS || MS SQL</span>
+        </div>
+    </div>
+    <div class="codex">CODEx Social Handles</div>
+    <ul class="wrapper">
+        <li class="icon facebook">
+            <span class="tooltip"></span>
+            <span><i class="bx bxl-facebook"></i></span>
+        </li>
+        <li class="icon twitter">
+            <span class="tooltip"></span>
+            <span><i class="bx bxl-linkedin"></i></span>
+        </li>
+        <li class="icon instagram">
+            <span class="tooltip"></span>
+            <span><i class="bx bxl-instagram"></i></span>
+        </li>
+        <li class="icon github">
+            <span class="tooltip"></span>
+            <span><i class="bx bxl-github"></i></span>
+        </li>
+</body>
+
+</html>
