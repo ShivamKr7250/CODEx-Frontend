@@ -2,345 +2,365 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CODEx</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CODEX</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 
 <body>
-    <header>
-        <input type="checkbox" name="" id="toggler">
-        <label for="toggler" class="fas fa-bars"></label>
-
-        <a href="#" class="logo"><img src="img/logo2.png" alt=""></a>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <div class="dropdown">
-                <a href="#events">Events</a>
-                <ul class="dropdown-content">
-                    <li><a href="#past-events">Past Events</a></li>
-                    <li><a href="#upcoming-events">Upcoming Events</a></li>
-                    <li><a href="#certificates">Certificates</a></li> 
-                </ul>
-            </div>
-            <a href="#review">Feedback</a>
-        </nav>
-        <div class="icons">
-            <a href="login/signup.html" class="fas fa-user"></a>
+  <header class="header">
+    <a href="#" target="_blank" class="logo"><img src="img/logo2.png" alt=""></a>
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li><a href="#home" class="navbar-link"> Home </a></li>
+        <li><a href="#about" class="navbar-link"> About </a></li>
+        <div class="dropdown">
+          
+          <li><a href="#" class="navbar-link"> Events</a>
+            <ul class="dropdown-content">
+              <li><a href="#past-events">Past Events</a></li>
+              <li><a href="#upcoming-events">Upcoming Events</a></li>
+              <li><a href="#certificates">Certificates</a></li>
+            </ul>
+          </li>
         </div>
-    </header>
-    <section class="home" id="home">
-        <div class="content">
-            <h1>CODEx</h1>
-            <h2 id="element"></h2>
-            <button class="btn">Learn More</button>
+        <li><a href="#contactus" class="navbar-link">Review</a></li>
+      </ul>
+    </nav>
+    <div class="icons">
+      <a href="login/signup.html" class="fas fa-user"></a>
+    </div>
+
+    <div class="mobile-navbar-btn">
+      <ion-icon name="menu" class="mobile-nav-icon"></ion-icon>
+      <ion-icon name="close" class="mobile-nav-icon"></ion-icon>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="section section-hero">
+      <div class="container1 grid grid-two-column">
+        <div class="content" id="home">
+          <h1>CODEx</h1>
+          <h2 id="element"></h2>
+          <button class="btn">Learn More</button>
         </div>
         <div class="mmdu">
-            <h3>MAHARISHI MARKENDESHWAR DEEMED TO BE UNIVERSITY - MULLANA, AMBALA</h3>
+          <h3>MAHARISHI MARKENDESHWAR DEEMED TO BE UNIVERSITY - MULLANA, AMBALA</h3>
         </div>
+      </div>
     </section>
-
     <section class="about" id="about">
-        <h1 class="heading"> About us </h1>
-        <div class="row">
-            <div class="video-container">
-                <video src="video.mp4" loop autoplay muted></video>
-                <h3>Community Of Developers</h3>
-            </div>
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto, voluptates quos asperiores
-                    reiciendis fugit. In eveniet nisi aliquid facere exercitationem consectetur dolores magni. Lorem
-                    ipsum dolor sit, amet consectetur adipisicing elit. Ullam totam facilis aperiam et praesentium sunt,
-                    commodi minima cumque doloribus. Consequatur</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nisi non nemo Lorem ipsum dolor sit
-                    amet, consectetur adipisicing elit. Nemo reprehenderit fugiat est. Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit. Facilis ex nobis aspernatur dignissimos? Omnis cupiditate saepe velit
-                    praesentium deserunt aliquid adipisci, est amet quisquam eligendi quod illum voluptatum delectus
-                    accusantium!
-                </p>
-            </div>
+      <h1 class="heading"> About us </h1>
+      <div class="row">
+        <div class="video-container">
+          <video src="video.mp4" loop autoplay muted></video>
+          <h3>Community Of Developers</h3>
         </div>
-        <div class="nav1">
-            <ul>
-                <li><a href="#Team" >Team</a></li>
-                <li><a href="event">Event</a></li>
-                <li><a href="EventGallery/event.html">Event Gallery</a></li>
-                <li><a href="#Community">Community Handles</a></li>
-                <li><a href="#Social">Social Handles</a></li>
-                <li><a href="#contactus">Contact Us</a></li>
-            </ul>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto, voluptates quos asperiores
+            reiciendis fugit. In eveniet nisi aliquid facere exercitationem consectetur dolores magni. Lorem
+            ipsum dolor sit, amet consectetur adipisicing elit. Ullam totam facilis aperiam et praesentium sunt,
+            commodi minima cumque doloribus. Consequatur</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nisi non nemo Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Nemo reprehenderit fugiat est. Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Facilis ex nobis aspernatur dignissimos? Omnis cupiditate saepe velit
+            praesentium deserunt aliquid adipisci, est amet quisquam eligendi quod illum voluptatum delectus
+            accusantium!
+          </p>
         </div>
+      </div>
+      <div class="nav1">
+        <ul>
+          <li><a href="#Team">Team</a></li>
+          <li><a href="event">Events</a></li>
+          <li><a href="EventGallery/event.html">Event Gallery</a></li>
+          <li><a href="#Community">Community Guidelines</a></li>
+          <li><a href="#Social">Social Handles</a></li>
+          <li><a href="#review">Review</a></li>
+        </ul>
+      </div>
     </section>
     <section class="Team" id="Team">
-        <h1 class="heading1">Team Members</h1>
-        <div class="row-t">
-            <div class="row1">
-                <div class="m1">
-                    <div class="img1"><img src="img/bg4.png" alt=""></div>
-                    <h2>Surinder Pal Singh</h2>
-                    <h3>FACULTY ADVISOR MM(DU)</h3>
-                    <h4><a href="">View profile</a></h4>
-                </div>
-                <div class="m1">
-                    <div class="img1"><img src="Profile Card Shivam/shivam.jpeg" alt=""></div>
-                    <h2>Shivam</h2>
-                    <h3>PRESIDENT</h3>
-                    <h4><a href="Profile Card Shivam/profile_shivam.html">View profile</a></h4>
-                </div>
-                <div class="m1">
-                    <div class="img1"><img src="Profile Card Ritik/ritik.jpg" alt=""></div>
-                    <h2>Ritik Raj</h2>
-                    <h3>VICE-PRESIDENT</h3>
-                    <h4><a href="Profile Card Ritik/profile_ritik.html">View profile</a></h4>
-                </div>
-                <div class="m1">
-                    <div class="img1"><img src="Profile Card Kaveri/" alt=""></div>
-                    <h2>Kaveri Negi</h2>
-                    <h3>GENERAL SECRETARY</h3>
-                    <h4><a href="Profile Card Kaveri/profile_kaveri.html">View profile</a></h4>
-                </div>
-            </div>
-            <div class="row2">
-                <div class="m1">
-                    <div class="img1"><img src="Profile Card Prakash/prakash.jpeg" alt=""></div>
-                    <h2>Prakash</h2>
-                    <h3>JOINT SECRETARY</h3>
-                    <h4><a href="Profile Card Prakash/profile_prakash.html">View profile</a></h4>
-                </div>
-                <div class="m1">
-                    <div class="img1"><img src="Profile Card Raushan/raushan.jpeg" alt=""></div>
-                    <h2>Raushan</h2>
-                    <h3>TREASURER</h3>
-                    <h4><a href="Profile Card Raushan/profile_raushan.html">View profile</a></h4>
-                </div>
-                <div class="m1">
-                    <div class="img1"><img src="Profile Card Priyanshu/priyanshu_photo.jpeg" alt=""></div>
-                    <h2>Priyanshu Kumar</h2>
-                    <h3>CORE MEMBER</h3>
-                    <h4><a href="Profile Card Priyanshu/profiledevil.html">View profile</a></h4>
-                </div>
-                <div class="m1">
-                    <div class="img1"><img src="Profile Card Sagar/" alt=""></div>
-                    <h2>Sagar Kumar</h2>
-                    <h3>CORE MEMBER</h3>
-                    <h4><a href="Profile Card Sagar/profile_sagar.html">View profile</a></h4>
-                </div>
-            </div>
-            <div class="row3">
-                <div class="m1">
-                    <div class="img1"><img src="img/bg4.png" alt=""></div>
-                    <h2>Himanshi Saini</h2>
-                    <h3>CORE MEMBER</h3>
-                    <h4><a href="">View profile</a></h4>
-                </div>
-                <div class="m1">
-                    <div class="img1"><img src="img/bg4.png" alt=""></div>
-                    <h2>Lovish Aul</h2>
-                    <h3>CORE MEMBER</h3>
-                    <h4><a href="">View profile</a></h4>
-                </div>
-                <div class="m1">
-                    <div class="img1"><img src="Profile Card Sukhvinder/sukhvinder.jpeg" alt=""></div>
-                    <h2>Sukhvinder Kaur</h2>
-                    <h3>CORE MEMBER</h3>
-                    <h4><a href="Profile Card Sukhvinder/profile_sukhvinder.html">View profile</a></h4>
-                </div>
-                <div class="m1">
-                    <div class="img1"><img src="Profile Card Saloni/saloni.jpeg" alt=""></div>
-                    <h2>Saloni Saroha</h2>
-                    <h3>CORE MEMBER</h3>
-                    <h4><a href="Profile Card Saloni/profile_saloni.html">View profile</a></h4>
-                </div>
-            </div>
+      <h1 class="heading1">Team Members</h1>
+      <div class="row-t">
+        <div class="row1">
+          <div class="m1">
+            <div class="img1"><img src="img/bg4.png" alt=""></div>
+            <h2>Surinder Pal Singh</h2>
+            <h3>FACULTY ADVISOR MM(DU)</h3>
+            <h4><a href="">View profile</a></h4>
+          </div>
+          <div class="m1">
+            <div class="img1"><img src="Profile Card Shivam/shivam.jpeg" alt=""></div>
+            <h2>Shivam</h2>
+            <h3>PRESIDENT</h3>
+            <h4><a href="Profile Card Shivam/profile_shivam.html">View profile</a></h4>
+          </div>
+          <div class="m1">
+            <div class="img1"><img src="Profile Card Ritik/ritik.jpg" alt=""></div>
+            <h2>Ritik Raj</h2>
+            <h3>VICE-PRESIDENT</h3>
+            <h4><a href="Profile Card Ritik/profile_ritik.html">View profile</a></h4>
+          </div>
+          <div class="m1">
+            <div class="img1"><img src="Profile Card Kaveri/" alt=""></div>
+            <h2>Kaveri Negi</h2>
+            <h3>GENERAL SECRETARY</h3>
+            <h4><a href="Profile Card Kaveri/profile_kaveri.html">View profile</a></h4>
+          </div>
         </div>
+        <div class="row2">
+          <div class="m1">
+            <div class="img1"><img src="Profile Card Prakash/prakash.jpeg" alt=""></div>
+            <h2>Prakash</h2>
+            <h3>JOINT SECRETARY</h3>
+            <h4><a href="Profile Card Prakash/profile_prakash.html">View profile</a></h4>
+          </div>
+          <div class="m1">
+            <div class="img1"><img src="Profile Card Raushan/raushan.jpeg" alt=""></div>
+            <h2>Raushan</h2>
+            <h3>TREASURER</h3>
+            <h4><a href="Profile Card Raushan/profile_raushan.html">View profile</a></h4>
+          </div>
+          <div class="m1">
+            <div class="img1"><img src="Profile Card Priyanshu/priyanshu_photo.jpeg" alt=""></div>
+            <h2>Priyanshu Kumar</h2>
+            <h3>CORE MEMBER</h3>
+            <h4><a href="Profile Card Priyanshu/profiledevil.html">View profile</a></h4>
+          </div>
+          <div class="m1">
+            <div class="img1"><img src="Profile Card Sagar/" alt=""></div>
+            <h2>Sagar Kumar</h2>
+            <h3>CORE MEMBER</h3>
+            <h4><a href="Profile Card Sagar/profile_sagar.html">View profile</a></h4>
+          </div>
+        </div>
+        <div class="row3">
+          <div class="m1">
+            <div class="img1"><img src="img/bg4.png" alt=""></div>
+            <h2>Himanshi Saini</h2>
+            <h3>CORE MEMBER</h3>
+            <h4><a href="">View profile</a></h4>
+          </div>
+          <div class="m1">
+            <div class="img1"><img src="img/bg4.png" alt=""></div>
+            <h2>Lovish Aul</h2>
+            <h3>CORE MEMBER</h3>
+            <h4><a href="">View profile</a></h4>
+          </div>
+          <div class="m1">
+            <div class="img1"><img src="Profile Card Sukhvinder/sukhvinder.jpeg" alt=""></div>
+            <h2>Sukhvinder Kaur</h2>
+            <h3>CORE MEMBER</h3>
+            <h4><a href="Profile Card Sukhvinder/profile_sukhvinder.html">View profile</a></h4>
+          </div>
+          <div class="m1">
+            <div class="img1"><img src="Profile Card Saloni/saloni.jpeg" alt=""></div>
+            <h2>Saloni Saroha</h2>
+            <h3>CORE MEMBER</h3>
+            <h4><a href="Profile Card Saloni/profile_saloni.html">View profile</a></h4>
+          </div>
+        </div>
+        <button class="btnv"><a href="members.html">All Members</a></button>
+      </div>
+      </div>
     </section>
-    <section class="community-handles">
-        <h1 class="heading-community">Community-handles</h1>
-        <p class="para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolore sapiente, earum unde deserunt veniam ipsa temporibus tempore quisquam similique consectetur eius accusantium cupiditate doloribus. Obcaecati debitis soluta eligendi voluptates <br>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur maxime voluptas veritatis vel reprehenderit magni quibusdam vero modi, earum pariatur cumque quo sit, eius ex, cum possimus iusto asperiores quod. <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, aspernatur dolore iure possimus temporibus voluptatem saepe ut nemo laboriosam placeat blanditiis. Eligendi, architecto fugit sit sapiente eos a provident excepturi.
-        </p>
+    <section class="community-guidelines">
+      <h1 class="heading-community">Community Guidelines</h1>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolore sapiente, earum unde deserunt veniam ipsa
+        temporibus tempore quisquam similique consectetur eius accusantium cupiditate doloribus. Obcaecati debitis
+        soluta eligendi voluptates <br>
+        <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur maxime voluptas veritatis vel reprehenderit
+        magni quibusdam vero modi, earum pariatur cumque quo sit, eius ex, cum possimus iusto asperiores quod. <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, aspernatur dolore iure possimus temporibus
+        voluptatem saepe ut nemo laboriosam placeat blanditiis. Eligendi, architecto fugit sit sapiente eos a provident.
+        <br>
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perspiciatis, dolores, optio a architecto
+        iure expedita totam inventore deserunt, labore ab? Tenetur consequuntur perferendis tempora, qui saepe velit
+        necessitatibus officiis
+      </p>
     </section>
     <!-- sliderr -->
-    <section class="slider">
-      <h1 class="heading-slider">Event</h1>
-        <div class="container swiper">
-            <div class="slide-container">
-              <div class="card-wrapper swiper-wrapper">
-                <div class="card swiper-slide">
-                  <div class="image-box">
-                    <img src="davinci.jpg" alt="">
-                  </div>
-                  <div class="profile-details">
-                    <img src="davinci.jpg" alt="">
-                    <div class="name-event">
-                      <h3 class="name">DAVICI</h3>
-                      <h4 class="event"><a href="#davinci">View details</a></h4>
-                    </div>
-                  </div>
-                </div>
-                <!-- 2nd box -->
-                <div class="card swiper-slide">
-                  <div class="image-box">
-                    <img src="davinci.jpg" alt="">
-                  </div>
-                  <div class="profile-details">
-                    <img src="img/bg6.jpeg" alt="">
-                    <div class="name-event">
-                      <h3 class="name">X-Quizit</h3>
-                      <h4 class="event"><a href="#x-quizit">View details</a></h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="card swiper-slide">
-                  <div class="image-box">
-                    <img src="img/bg6.jpeg" alt="">
-                  </div>
-                  <div class="profile-details">
-                    <img src="img/bg6.jpeg" alt="">
-                    <div class="name-job">
-                      <h3 class="name">Richard Bond</h3>
-                      <h4 class="job">Data Analyst</h4>
-                    </div>
-                  </div>
-                </div>
-                <!--3rd box  -->
-                <div class="card swiper-slide">
-                  <div class="image-box">
-                    <!--<img src="images/showImg/appDev.jpg" alt="" />-->
-                  </div>
-                  <div class="profile-details">
-                    <!--<img src="images/profile/profile4.jpg" alt="" />-->
-                    <div class="name-job">
-                      <h3 class="name">Priase</h3>
-                      <h4 class="job">App Developer</h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="card swiper-slide">
-                  <div class="image-box">
-                    <!--<img src="images/showImg/blogger.jpg" alt="" />-->
-                  </div>
-                  <div class="profile-details">
-                    <!--<img src="images/profile/profile5.jpg" alt="" />-->
-                    <div class="name-job">
-                      <h3 class="name">James Laze</h3>
-                      <h4 class="job">Blogger</h4>
-                    </div>
-                  </div>
+    <section class="slider" id="past-events">
+      <h1 class="heading-slider">Events</h1>
+      <h2 class="pastevents">Events Organised By CODEx</h2>
+      <div class="container swiper">
+        <div class="slide-container">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="davinci.jpg" alt="">
+              </div>
+              <div class="profile-details">
+                <img src="davinci.jpg" alt="">
+                <div class="name-event">
+                  <h3 class="name">DAVICI</h3>
+                  <h4 class="event"><a href="#davinci">View details</a></h4>
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next swiper-navBtn"></div>
-            <div class="swiper-button-prev swiper-navBtn"></div>
-            <div class="swiper-pagination"></div>
+            <!-- 2nd box -->
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="davinci.jpg" alt="">
+              </div>
+              <div class="profile-details">
+                <img src="img/bg6.jpeg" alt="">
+                <div class="name-event">
+                  <h3 class="name">X-QuizIT</h3>
+                  <h4 class="event"><a href="#x-quizit">View details</a></h4>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="img/bg6.jpeg" alt="">
+              </div>
+              <div class="profile-details">
+                <img src="img/bg6.jpeg" alt="">
+                <div class="name-job">
+                  <h3 class="name">Richard Bond</h3>
+                  <h4 class="job">Data Analyst</h4>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+              </div>
+              <div class="profile-details">
+                <div class="name-job">
+                  <h3 class="name">Priase</h3>
+                  <h4 class="job">App Developer</h4>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+              </div>
+              <div class="profile-details">
+                <div class="name-job">
+                  <h3 class="name">James Laze</h3>
+                  <h4 class="job">Blogger</h4>
+                </div>
+              </div>
+            </div>
           </div>
-      
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
     </section>
     <!-- contact us ................ -->
     <section class="contactus" id="contactus">
-      <h1 class="heading-contactus"> Contact <span> us </span></h1>
+      <h1 class="heading-contactus"> Review </h1>
       <div class="row4">
-          <form id="form1" action="">
-              <input type="text" placeholder="Name" class="box-contact">
-              <input type="email" placeholder="Email" class="box-contact">
-              <input type="number" placeholder="Mobile no." class="box-contact">
-              <textarea name="" class="box" placeholder="Message" cols="30" rows="10"></textarea>
-              <input type="submit" value="Send Message" class="btn-contact">
-          </form>
-          <div class="image-contact">
-              <img src="img/contactus.jpeg" alt="">
-          </div>
+        <form id="form1" action="">
+          <input type="text" placeholder="Name" class="box-contact">
+          <input type="email" placeholder="Email" class="box-contact">
+          <input type="number" placeholder="Mobile no." class="box-contact">
+          <textarea name="" class="box" placeholder="Message" cols="30" rows="10"></textarea>
+          <input type="submit" value="Send Message" class="btn-contact">
+        </form>
+        <div class="image-contact">
+          <img src="img/teampic.jpg" alt="">
+        </div>
       </div>
-  </section>
-
-
+    </section>
     <section class="footer" id="footer">
       <div class="box-container">
-          <div class="box">
-              <h3>quick links</h3>
-              <a href="#home">Home</a>
-              <a href="#about">About</a>
-              <a href="#review">Feedback</a>
-              <a href="contactus">Contact</a>
-          </div>
-  
-          <div class="box">
-              <h3>extra links</h3>
-              <a href="#">Instagram</a>
-              <a href="#">Facebook</a>
-              <a href="#">Linkedin</a>
-          </div>
+        <div class="box">
+          <h3>Quick Links</h3>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#review">Feedback</a>
+          <a href="contactus">Contact</a>
+        </div>
 
-          <div class="box">
-              <h3>locations</h3>
-              <a href="#">MMDU</a>
-             
-          </div>
-  
-          <div class="box">
-              <h3>contact info</h3>
-              <a href="#">+123-456-7890</a>
-              <a href="#">Codex@gmail.com</a>
-              <a href="#">Ambala,Haryana, india - 400104</a>
-          </div>
+        <div class="box">
+          <h3>Extra Links</h3>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Linkedin</a>
+        </div>
+
+        <div class="box">
+          <h3>Location</h3>
+          <a href="#">MM(DU)-MULLANA, AMBALA</a>
+
+        </div>
+
+        <div class="box">
+          <h3>Contact Info</h3>
+          <a href="#">+123-456-7890</a>
+          <a href="#">codex@gmail.com</a>
+          <a href="#">Ambala,Haryana, India - 135003</a>
+        </div>
       </div>
 
-     
 
-  </section>
 
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-<script src="swiper-bundle.min.js"></script>
+    </section>
+
+  </main>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="index.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="swiper-bundle.min.js"></script>
 </body>
-
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var typed = new Typed('#element', {
-          strings: ['Community of Developers'],
-          typeSpeed: 50,
-        });
-      
-        var swiper = new Swiper(".slide-container", {
+  document.addEventListener("DOMContentLoaded", function () {
+    var typed = new Typed('#element', {
+      strings: ['Community of Developers'],
+      typeSpeed: 50,
+    });
+
+    var swiper = new Swiper(".slide-container", {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      sliderPerGroup: 4,
+      loop: true,
+      centerSlide: true,
+      fade: true,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        520: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1000: {
           slidesPerView: 4,
-          spaceBetween: 20,
-          sliderPerGroup: 4,
-          loop: true,
-          centerSlide: true,
-          fade: true,
-          grabCursor: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            dynamicBullets: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        
-          breakpoints: {
-            0: {
-              slidesPerView: 1,
-            },
-            520: {
-              slidesPerView: 2,
-            },
-            768: {
-              slidesPerView: 3,
-            },
-            1000: {
-              slidesPerView: 4,
-            },
-          },
-        });
-      });
-      
+        },
+      },
+    });
+  });
+
 
 
 </script>
